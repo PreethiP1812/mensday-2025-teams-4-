@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Men's Day — Dear Vivek,</title>
+<style>
+  :root{
+    --c1:#ff8a3d; --c2:#ff5f87;
+    --card1:#1e88e5; --card2:#0ea5a0;
+    --txt:#082036;
+    font-family: 'Segoe UI',Roboto,Arial;
+  }
+  body{
+    margin:0;height:100vh;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(140deg,var(--c1),var(--c2));
+    animation:bgShift 8s ease-in-out infinite alternate;
+    padding:0 16px;box-sizing:border-box;
+  }
+  .card{
+    width:100%;max-width:600px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(14px);
+    border-radius:26px;padding:26px 30px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+    animation:float 4s ease-in-out infinite;
+    text-align:center;color:var(--txt);
+  }
+  h1{margin:0;font-size:30px;font-weight:700;animation:fadeUp .8s;}
+  .hero{
+    margin:18px auto;
+    background:linear-gradient(90deg,var(--card1),var(--card2));
+    border-radius:20px;padding:20px;color:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.18);
+    animation:popIn .7s;
+  }
+  .hero h2{margin:0;font-size:36px;font-weight:800;}
+  .hero p{margin:6px 0 0;font-size:16px;opacity:.9;}
+  blockquote{
+    margin:18px auto 0;font-size:17px;line-height:1.45;
+    background:rgba(255,255,255,0.2);
+    border-left:4px solid white;
+    border-radius:10px;padding:16px 20px;
+    animation:fadeUp 1s .2s both;
+  }
+  .closing{margin-top:14px;font-size:16px;}
+  .sig{font-weight:800;color:#0a4e6a;margin-top:4px;}
+  /* Animations */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+  @keyframes popIn{0%{transform:scale(.85);opacity:0;}100%{transform:scale(1);opacity:1;}}
+  @keyframes float{0%,100%{transform:translateY(-6px);}50%{transform:translateY(6px);}}
+  @keyframes bgShift{0%{background:linear-gradient(140deg,var(--c1),var(--c2));}
+                     100%{background:linear-gradient(140deg,#ff5f87,#ff8a3d);}}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Dear Vivek,</h1>
+  <div class="hero">
+    <h2>Happy Men's Day</h2>
+    <p>Celebrating strength, kindness & quiet courage.</p>
+  </div>
+  <blockquote>	“Vivek - Happy Men’s Day to the calm, steady, and supportive man in our workplace.
+  </blockquote>
+  <div class="closing">
+    Stay strong and Keep inspiring,
+    <div class="sig">AceTP Women</div>
+  </div>
+</div>
+</body>
+</html>
